@@ -1,11 +1,10 @@
 import UserList from "./component/UserList";
+import tailwindcss from "./index.css";
 
 function App() {
   return (
-    <div >
-      <h1> 
-        <UserList/>
-      </h1>
+    <div>
+      <UserList />
     </div>
   );
 }
