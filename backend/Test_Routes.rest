@@ -1,0 +1,37 @@
+//Testing Routes dengan HTTP Response client
+###
+
+GET http://localhost:8080/users
+//Routing data 
+//Read all data
+###
+
+GET http://localhost:8080/users/3
+//routing dengan id: 1
+//read data berdasarkan parameter id
+###
+
+POST http://localhost:8080/users
+//send data type json ke function createUser
+//tambah data
+Content-Type: application/json
+
+{
+    "name": "Nerf",
+    "email": "Nerf@gmail.com",
+    "gender": "Male"
+}
+###
+PATCH  http://localhost:8080/users/1
+//update data berdasarkan parameter id
+Content-Type: application/json
+
+{
+    "name": "Rendy Pangestu",
+    "email": "Ren@gmail.com",
+    "gender": "Male"
+}
+###
+
+DELETE http://localhost:8080/users/2
+//delete data berdasarkan parameter id
